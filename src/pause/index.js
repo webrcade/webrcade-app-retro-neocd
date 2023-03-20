@@ -9,7 +9,7 @@ import {
   EditorScreen,
   GamepadWhiteImage,
   KeyboardWhiteImage,
-  NeoGeoBackground,
+  NeoGeoCdBackground,
   PauseScreenButton,
   Resources,
   SaveStatesEditor,
@@ -156,7 +156,7 @@ export class EmulatorPauseScreen extends Component {
         ) : null}
         {mode === ModeEnum.STATE ? (
           <SaveStatesEditor
-            emptyImageSrc={NeoGeoBackground}
+            emptyImageSrc={NeoGeoCdBackground}
             emulator={emulator}
             onClose={closeCallback}
             showStatusCallback={emulator.saveMessageCallback}
