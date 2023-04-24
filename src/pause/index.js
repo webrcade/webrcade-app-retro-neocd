@@ -1,10 +1,10 @@
 import React from 'react';
 import { Component } from 'react';
-import { NeoGeoCdSettingsEditor } from './settings';
 
 import { GamepadControlsTab, KeyboardControlsTab } from './controls';
 
 import {
+  AppSettingsEditor,
   CustomPauseScreen,
   EditorScreen,
   GamepadWhiteImage,
@@ -149,7 +149,7 @@ export class EmulatorPauseScreen extends Component {
         ) : null}
 
         {mode === ModeEnum.NEOCD_SETTINGS ? (
-          <NeoGeoCdSettingsEditor
+          <AppSettingsEditor
             emulator={emulator}
             onClose={closeCallback}
           />
