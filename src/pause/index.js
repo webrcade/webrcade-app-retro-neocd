@@ -2,9 +2,9 @@ import React from 'react';
 import { Component } from 'react';
 
 import { GamepadControlsTab, KeyboardControlsTab } from './controls';
+import { NeoCdSettingsEditor } from './settings';
 
 import {
-  AppSettingsEditor,
   CustomPauseScreen,
   EditorScreen,
   GamepadWhiteImage,
@@ -149,7 +149,7 @@ export class EmulatorPauseScreen extends Component {
         ) : null}
 
         {mode === ModeEnum.NEOCD_SETTINGS ? (
-          <AppSettingsEditor
+          <NeoCdSettingsEditor
             emulator={emulator}
             onClose={closeCallback}
           />
